@@ -1,23 +1,23 @@
 package domain;
 
 public class Exercise {
-    private int[] arr = new int[2];
+    private int[] time = new int[2];
     public void Calculate(){
-        while(arr[0] != 24)
+        while(time[0] != 24)
         {
-            arr[1]++;
-            if (arr[1] == 60) 
+            time[1]++;
+            if (time[1] == 60) 
             {
-                arr[1] = 0;
-                arr[0] += 1;
+                time[1] = 0;
+                time[0] += 1;
             }
-            if (arr[0] % 10 == arr[1] / 10 && arr[0] / 10 == arr[1] % 10 ) {
-                if (arr[0] < 10)
-                    System.out.println("0" +arr[0]+":"+arr[1]);
-                else if(arr[1] < 10)
-                    System.out.println("" +arr[0]+":0"+arr[1]);
+            if (time[0] % 10 == time[1] / 10 && time[0] / 10 == time[1] % 10 ) {
+                if (time[0] < 10)
+                    System.out.println("0" +time[0]+":"+time[1]);
+                else if(time[1] < 10)
+                    System.out.println("" +time[0]+":0"+time[1]);
                 else
-                    System.out.println("" +arr[0]+":"+arr[1]);
+                    System.out.println("" +time[0]+":"+time[1]);
             }
         }
     }
